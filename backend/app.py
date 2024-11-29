@@ -98,10 +98,10 @@ def whatsapp_bot():
             print(user_message)
             if user_message == "1":
                 # Send the food menu with clickable options
-                food_menu_message = "Here’s our healthy menu! Please click an item to add to your order:\n" + \
-                    "\n".join([f"{key}. {value}" for key, value in menu.items()])
-                response.message(food_menu_message)
-                user_data["state"] = "ordering"
+                    food_menu_message = "Here’s our healthy menu! Please click the button below to explore and add items to your order."
+                    response.message(food_menu_message).media('http://localhost:3000/menu')  # Use your frontend URL
+
+                    user_data["state"] = "ordering"
             elif user_message == "2":
                 # Simulate delivery tracking
                 response.message("Your order is on its way! 🚚 Expected delivery time: 30 minutes.")
