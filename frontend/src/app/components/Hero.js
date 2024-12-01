@@ -98,42 +98,36 @@
 //   );
 // }
 
-
 'use client';
 
 import * as React from "react";
-
 import Image from "next/image";
-
-
 import { Menu } from "@/app/components/Menu";
 import { PricingPlans } from "@/app/components/PricingPlans";
 import { BlogSection } from "@/app/components/Blogsection";
 import { InstagramSection } from "@/app/components/InstagramSection";
 
 export default function Hero() {
-
-
   return (
     <section className="flex flex-col justify-center items-center w-full">
-      
+      {/* Hero Section */}
       <div
         className="relative w-full h-[88vh] bg-gray-100 overflow-hidden flex items-center"
         style={{
-          backgroundImage: `url('/home-banner1.jpg')`,
+          backgroundImage: `url('https://images4.alphacoders.com/129/thumb-1920-1291091.jpg')`,
           backgroundAttachment: "fixed",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-        <div className="relative z-10 text-center max-w-4xl mx-auto text-white px-6">
+        {/* Left-aligned Text and Button */}
+        <div className="relative z-10 text-left max-w-4xl ml-10 text-white px-6">
           <h1 className="text-5xl font-bold mb-4">
             Healthy Inside, Fresh <span className="text-green-500">Outside.</span>
           </h1>
           <p className="text-lg mb-8">
-            We deliver healthy food that is ready to eat. Just choose your own
-            menu you like.
+            Start strong, stay strong, with the right fuel delivered to your door. Just choose your own menu you like.
           </p>
           <button className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg shadow-lg font-semibold transition duration-200">
             Learn More
@@ -141,56 +135,58 @@ export default function Hero() {
         </div>
       </div>
 
-      
-      <h className="text-3xl font-mono mt-10 mb-6">How it Works</h>
+      {/* How It Works Section */}
+      <h2 className="text-3xl font-mono mt-10 mb-6">How it Works</h2>
       <div className="m-10">
         <div className="container mx-auto flex justify-between items-center">
+          {/* Step 1 */}
           <div className="container grid items-center m-10">
             <Image
               src={"/1.png"}
-              alt="logo"
+              alt="Choose Your Favourite Meal"
               width={100}
               height={100}
               className="rounded-full"
             />
-            <h className="font-bold">Choose Your Favourite Meal</h>
+            <h3 className="font-bold">Choose Your Favourite Meal</h3>
             <p>
-              Choose your favorite meals and order online or by phone. It's easy
-              to customize your order.
+              Choose your favorite meals and order online or by phone. It's easy to customize your order.
             </p>
           </div>
+
+          {/* Step 2 */}
           <div className="container grid items-center m-10">
             <Image
               src={"/2.png"}
-              alt="logo"
+              alt="We Deliver Our Meals"
               width={150}
               height={150}
               className="rounded-full"
             />
-            <h className="font-bold">We Deliver Our Meals</h>
+            <h3 className="font-bold">We Deliver Our Meals</h3>
             <p>
-              Prepared and delivered meals arrive at your door. Duis autem vel
-              eum iriure dolor in hendrerit in vulputate.
+              Prepared and delivered meals arrive at your door. Duis autem vel eum iriure dolor in hendrerit in vulputate.
             </p>
           </div>
+
+          {/* Step 3 */}
           <div className="container grid items-center m-10">
             <Image
               src={"/3.png"}
-              alt="logo"
+              alt="Eat and Enjoy!"
               width={150}
               height={150}
               className="rounded-full"
             />
-            <h className="font-bold">Eat and Enjoy!</h>
+            <h3 className="font-bold">Eat and Enjoy!</h3>
             <p>
-              No shopping, no cooking, no counting, and no cleaning. Enjoy your
-              healthy meals with your family.
+              No shopping, no cooking, no counting, and no cleaning. Enjoy your healthy meals with your family.
             </p>
           </div>
         </div>
       </div>
 
-      
+      {/* Other Sections */}
       <Menu />
       <PricingPlans />
       <BlogSection />
@@ -198,4 +194,3 @@ export default function Hero() {
     </section>
   );
 }
-
