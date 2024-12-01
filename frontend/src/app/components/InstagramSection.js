@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export function InstagramSection ()  {
   const images = [
     "/insta1.jpg", 
@@ -14,7 +14,15 @@ export function InstagramSection ()  {
   return (
     <div className="max-w-7xl mx-auto py-12 px-4 text-center">
       <h2 className="text-2xl  mb-2 font-mono">FOLLOW OUR INSTAGRAM</h2>
-      <p className="text-green-600 text-lg font-medium font-mono">@GrainyGiggles</p>
+      <a 
+        href="https://www.instagram.com/grainygiggles" 
+        className="text-green-600 text-lg font-medium font-mono" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        @GrainyGiggles
+      </a>
+
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-7 gap-4 mt-6">
         {images.map((image, index) => (
           <div

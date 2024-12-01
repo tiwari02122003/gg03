@@ -16,13 +16,13 @@ export function Navbar() {
 
           
           <div className="hidden md:flex space-x-8 text-sm font-medium font-mono">
-            <Link href="#" className="text-gray-800 hover:text-green-500">
+            <Link href="/about" className="text-gray-800 hover:text-green-500">
               ABOUT US
             </Link>
             <Link href="/menu" className="text-gray-800 hover:text-green-500 font-mono">
               MENU
             </Link>
-            <Link href="#" className="text-gray-800 hover:text-green-500 font-mono">
+            {/* <Link href="#" className="text-gray-800 hover:text-green-500 font-mono">
               PROGRAMS
             </Link>
             <Link href="#" className="text-gray-800 hover:text-green-500 font-mono">
@@ -30,7 +30,7 @@ export function Navbar() {
             </Link>
             <Link href="/addproduct" className="text-gray-800 hover:text-green-500 font-mono">
               ADMIN
-            </Link>
+            </Link> */}
           </div>
 
           

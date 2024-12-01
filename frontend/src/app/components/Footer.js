@@ -21,7 +21,7 @@ export function Footer() {
           </div>
 
           
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center md:text-left">
+          {/* <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center md:text-left">
             <div>
               <h3 className="font-semibold mb-2">ABOUT</h3>
               <ul className="space-y-1 text-sm">
@@ -82,11 +82,11 @@ export function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
           
           <div className="flex space-x-4 mt-6 md:mt-0">
-            <a href="#" className="text-white hover:text-gray-300">
+            {/* <a href="#" className="text-white hover:text-gray-300">
               <FaFacebookF />
             </a>
             <a href="#" className="text-white hover:text-gray-300">
@@ -100,7 +100,7 @@ export function Footer() {
             </a>
             <a href="#" className="text-white hover:text-gray-300">
               <FaTumblr />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

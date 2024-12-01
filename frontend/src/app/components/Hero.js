@@ -188,7 +188,7 @@ export default function Hero() {
 
       {/* Other Sections */}
       <Menu />
-      <PricingPlans />
+      {/* <PricingPlans /> */}
       <BlogSection />
       <InstagramSection />
     </section>
