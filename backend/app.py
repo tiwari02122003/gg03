@@ -178,11 +178,16 @@ app = Flask(__name__)
 
 # UPI QR code generation
 def generate_qr_code(upi_id):
+    # Ensure the 'static' directory exists
+    if not os.path.exists("static"):
+        os.makedirs("static")
+
     qr = qrcode.QRCode(version=1, box_size=10, border=5)
     qr.add_data(upi_id)
     qr.make(fit=True)
     img = qr.make_image(fill="black", back_color="white")
     img.save("static/upi_qr.png")
+
 
 # Generate the UPI QR code
 UPI_ID = "7543822373@ybl"
