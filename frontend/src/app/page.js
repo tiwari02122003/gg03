@@ -16,7 +16,7 @@ export default function HomePage() {
       
       <div className="fixed bottom-4 right-4 z-50">
         <a
-          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`} // whatsapp bot link
+          href={`https://wa.me/+14155238886`} // whatsapp bot link
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white hover:bg-green-300 text-white px-4 py-2 rounded-full shadow-lg flex items-center space-x-2 transition-transform duration-200 transform hover:scale-110"
